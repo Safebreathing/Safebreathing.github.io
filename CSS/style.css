@@ -141,7 +141,6 @@ body {
       position: relative;
       color: var(--bg-main);
       font-weight: bold;
-      padding: 0;
       transition:
         color 0.3s ease,
         transform 0.3s ease;
