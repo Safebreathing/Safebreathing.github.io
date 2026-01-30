@@ -774,12 +774,6 @@ main .center-label span {
       line-height: 1.9;
     }
   }
-
-  .team-number {
-    font-size: 4.5rem;
-    font-weight: 800;
-    color: var(--border-color);
-  }
 }
 
 /* QUOTE */
@@ -804,13 +798,8 @@ main .center-label span {
     flex-direction: column;
     text-align: center;
   }
-
-  .team-number {
-    font-size: 4rem;
-    font-weight: 800;
-    color: var(--border-color);
-  }
 }
+
 .team-hero p strong {
   color: var(--navbar-link-hover);
   font-weight: 700;
