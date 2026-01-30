@@ -721,7 +721,6 @@ main .center-label span {
   );
   color: #fff;
   padding: 6rem 1rem;
-  text-align: center;
 
   h1 {
     font-size: 3rem;
@@ -730,73 +729,56 @@ main .center-label span {
   }
 
   p {
-    max-width: 800px;
+    max-width: 750px;
     margin: auto;
     font-size: 1.2rem;
     opacity: 0.9;
-  }
-
-  strong {
-    color: var(--navbar-link-hover);
   }
 }
 
 /* TEAM SECTION */
 .team-section {
   background-color: var(--bg-main);
-}
 
-.team-block {
-  padding: 2.5rem 0;
-  border-bottom: 1px solid var(--border-color);
-
-  &:last-child {
-    border-bottom: none;
+  .team-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    gap: 2rem;
   }
 
-  h3 {
-    font-size: 1.9rem;
-    font-weight: 700;
-    color: var(--text-main);
-    margin-bottom: 0.3rem;
+  .team-row.reverse {
+    flex-direction: row-reverse;
   }
 
-  .team-count {
-    display: inline-block;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    color: var(--navbar-link-hover);
+  .team-text {
+    max-width: 600px;
+
+    h3 {
+      font-size: 2rem;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    span {
+      display: inline-block;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: var(--navbar-link-hover);
+    }
+
+    p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      line-height: 1.9;
+    }
   }
 
-  p {
-    max-width: 720px;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-muted);
-  }
-}
-
-/* TEAM NAMES */
-.team-names {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  span {
-    color: var(--navbar-link-hover);
-    font-weight: bold;
-  }
-  li {
-    padding: 0.35rem 0.9rem;
-    border-radius: 20px;
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-color);
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: var(--text-main);
-    box-shadow: var(--shadow-soft);
+  .team-number {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--border-color);
   }
 }
 
@@ -810,20 +792,28 @@ main .center-label span {
     font-size: 1.3rem;
     font-weight: 500;
     color: var(--text-main);
-    max-width: 850px;
+    max-width: 800px;
     margin: auto;
   }
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .team-hero h1 {
-    font-size: 2.3rem;
+  .team-section .team-row,
+  .team-section .team-row.reverse {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .team-block h3 {
-    font-size: 1.5rem;
+  .team-number {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--border-color);
   }
+}
+.team-hero p strong {
+  color: var(--navbar-link-hover);
+  font-weight: 700;
 }
 
 /* Team Page End */
