@@ -638,93 +638,7 @@ main .center-label span {
   }
 }
 
-/* Use Cases Ens */
-/* ===== Google Font Cairo ===== */
-body, h1, h2, h3, h4, h5, h6, p, a, li {
-  font-family: 'Cairo', sans-serif;
-  color: #fff;
-}
-
-/* ===== Root Colors ===== */
-:root {
-  --primary-color: #4CAF50; /* Green */
-  --danger-color: #FF3B30; /* Red */
-  --warning-color: #FFC107; /* Yellow */
-  --text-color: #ffffff;
-  --bg-light: #f8f9fa;
-  --navbar-link-hover: #FFC107;
-}
-
-/* ===== General Body & Container ===== */
-body {
-  background-color: #0c1a2b;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* ===== Hero Section ===== */
-.hero {
-  padding: 100px 20px 80px;
-  background: linear-gradient(135deg, #0c1a2b 0%, #162b44 100%);
-  text-align: center;
-}
-
-.hero-title {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* ===== Section Titles ===== */
-.section-title {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.section-text, .section-desc {
-  font-size: 1rem;
-  color: #fff;
-}
-
-/* ===== Step Cards ===== */
-.step-card {
-  background-color: rgba(255,255,255,0.05);
-  padding: 20px;
-  border-radius: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.step-card h5 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: var(--primary-color);
-}
-
-.step-card p {
-  font-size: 0.95rem;
-  color: #e0e0e0;
-}
-
-/* ===== Step Card Hover Animation ===== */
-.step-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
+/* Use Cases End */
 /* ===== Video Wrapper ===== */
 .video-wrapper {
   width: 100%;
@@ -744,10 +658,11 @@ video {
 /* ===== How It Works Description Text ===== */
 .how-desc {
   font-size: 1rem;
-  color: #e0e0e0;
+  color: inherit; 
   max-width: 800px;
   margin: 15px auto;
   line-height: 1.5;
+  text-align: center;
 }
 
 /* ===== Use Cases Images ===== */
@@ -771,29 +686,12 @@ video {
   background: rgba(255,255,255,0.05);
   padding: 10px 20px;
   border-radius: 12px;
-  font-size: 1rem;
-}
-
-/* ===== Animations ===== */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 1s forwards;
-  animation-delay: 0.2s;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+  font-size: 1rem;}
 /* ===== Footer ===== */
 .site-footer {
-  background-color: #0c1a2b;
+  background-color: #0c1a2b; 
+  color: #fff;             
   padding: 50px 20px;
-  color: #fff;
   font-size: 0.95rem;
 }
 
@@ -804,7 +702,7 @@ video {
 }
 
 .site-footer a:hover {
-  color: var(--primary-color);
+  color: #1e90ff; 
 }
 
 .footer-top {
@@ -817,12 +715,14 @@ video {
   font-size: 1.5rem;
 }
 
-.footer-links ul, .footer-resources ul {
+.footer-links ul,
+.footer-resources ul {
   padding: 0;
   list-style: none;
 }
 
-.footer-links ul li, .footer-resources ul li {
+.footer-links ul li,
+.footer-resources ul li {
   margin-bottom: 8px;
 }
 
@@ -896,7 +796,7 @@ video {
 
 .site-footer ul li {
   margin-bottom: 0.5rem;
-  color: rgba(255, 255, 255, 0.85); /* للنص العادي */
+  color: rgba(255, 255, 255, 0.85); 
 }
 
 .site-footer ul li a {
