@@ -117,8 +117,72 @@
         </div>
       </nav>
     </header>
+
+    <section class="contact-section py-5">
+      <div class="container">
+        <div class="contact-wrapper">
+          <!-- Left Side: Info -->
+          <div class="contact-info">
+            <div class="contact-brand">
+              <img
+                src="/Assest/Icons/wind.svg"
+                alt="Safe Breathing Logo"
+                class="contact-logo"
+              />
+              <h2>Safe Breathing</h2>
+            </div>
+
+            <p class="contact-desc">
+              Have a question about our air quality monitoring device or want to
+              contact the team? Send us a message and we’ll get back to you
+              soon.
+            </p>
+
+            <div class="contact-extra">
+              <p><strong>Email:</strong> safebreathing743@gmail.com</p>
+              <p><strong>Project:</strong> Smart Air Quality & CO₂ Monitor</p>
+            </div>
+          </div>
+
+          <!-- Right Side: Form -->
+          <div class="contact-form-box">
+            <h3>Send Us a Message</h3>
+
+            <form id="contact-form">
+              <div class="mb-3">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" class="form-control" required autocomplete="additional-name"/>
+              </div>
+
+              <div class="mb-3">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" class="form-control" required autocomplete="email"/>
+              </div>
+
+              <div class="mb-3">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Send Message
+              </button>
+
+              <p id="form-status" class="form-status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Script Tags -->
     <script src="/JS/bootstrap.bundle.js"></script>
     <script src="/JS/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   </body>
 </html>

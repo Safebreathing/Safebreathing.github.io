@@ -806,3 +806,142 @@ main .center-label span {
 }
 
 /* Team Page End */
+/* Contact Page Start */
+.contact-section {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  padding: 5rem 0;
+  padding-top: calc(5rem + 70px);
+  margin-top: 2rem;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Left Side */
+.contact-info {
+  padding: 2rem 1rem;
+}
+
+.contact-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.contact-logo {
+  width: 42px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.contact-info h2 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.contact-desc {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  max-width: 420px;
+  margin-bottom: 1.5rem;
+}
+
+.contact-extra p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-main);
+}
+
+/* Right Side */
+.contact-form-box {
+  background-color: var(--bg-card);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-form-box h3 {
+  margin-bottom: 1.8rem;
+  color: var(--text-main);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact-form-box label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  color: var(--text-main);
+}
+
+.contact-form-box .form-control {
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form-box .form-control:focus {
+  border-color: var(--navbar-link-hover);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+  outline: none;
+}
+
+.contact-form-box textarea.form-control {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-form-box .btn-primary {
+  margin-top: 1.2rem;
+  padding: 0.9rem;
+  font-size: 1.05rem;
+  border-radius: 12px;
+}
+
+.form-status {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .contact-brand {
+    justify-content: center;
+  }
+
+  .contact-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-form-box {
+    padding: 2.2rem;
+  }
+
+  .contact-form-box h3 {
+    font-size: 1.7rem;
+  }
+}
+
+/* Contact Page End */
