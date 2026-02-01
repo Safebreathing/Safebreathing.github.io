@@ -119,17 +119,21 @@
     </header>
 
     <section class="contact-section py-5">
-      <div class="container">
+      <div class="container fade-up">
         <div class="contact-wrapper">
           <!-- Left Side: Info -->
           <div class="contact-info">
             <div class="contact-brand">
-              <img
-                src="/Assest/Icons/wind.svg"
-                alt="Safe Breathing Logo"
-                class="contact-logo"
-              />
-              <h2>Safe Breathing</h2>
+              <a
+                href="/index.html"
+                class="navbar-brand"
+                style="
+                  font-size: 2.5rem;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                "
+                ><i class="fa-solid fa-wind"></i> Safe Breathing</a
+              >
             </div>
 
             <p class="contact-desc">
@@ -151,12 +155,24 @@
             <form id="contact-form">
               <div class="mb-3">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" class="form-control" required autocomplete="additional-name"/>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  required
+                  autocomplete="name"
+                />
               </div>
 
               <div class="mb-3">
                 <label for="email">Your Email</label>
-                <input type="email" id="email" class="form-control" required autocomplete="email"/>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  required
+                  autocomplete="email"
+                />
               </div>
 
               <div class="mb-3">
@@ -180,6 +196,53 @@
       </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="site-footer fade-up">
+      <div class="container">
+        <div class="footer-top d-flex flex-wrap justify-content-between">
+          <!-- Brand / About -->
+          <div class="footer-brand mb-4">
+            <h2>
+              <a href="index.html"
+                ><i class="fa-solid fa-wind"></i> Safe Breathing</a
+              >
+            </h2>
+            <p>
+              Monitor CO₂,and humidity to create healthier indoor environments.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-links mb-4">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#whyAir">Why Air</a></li>
+              <li><a href="#device-features">Device Features</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#use-cases">Use Cases</a></li>
+            </ul>
+          </div>
+
+          <!-- Resources / Tips -->
+          <div class="footer-resources mb-4">
+            <h4>Quick Tips</h4>
+            <ul>
+              <li>Ventilate your room daily</li>
+              <li>Keep plants indoors to improve air</li>
+              <li>Check CO₂ levels regularly</li>
+              <li>Maintain optimal humidity</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom text-center mt-4 pt-3 border-top border-white-25"
+        >
+          <p>&copy; 2026 Safe Breathing. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
     <!-- Script Tags -->
     <script src="/JS/bootstrap.bundle.js"></script>
     <script src="/JS/script.js" defer></script>
